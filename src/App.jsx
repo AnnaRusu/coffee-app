@@ -1,7 +1,22 @@
-import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+import "./App.scss";
+import GetStarted from "./pages/get-started/GetStarted";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<GetStarted />} />
+        </Routes>
+      </div>
+    </Router>
+
+  );
 }
 
 export default App;
