@@ -1,17 +1,18 @@
+img {
+  height: 100%;
+  width: auto;
+}
+
 .card {
-  height: 280px;
+  flex: 0 0 auto;
+  height: 250px;
   width: 180px;
-  // border: 1px solid red;
   border-radius: 1.5rem;
   background: #cf9860;
+  cursor: pointer;
 
   .image-container {
     height: 10rem;
-
-    img {
-      height: 100%;
-      width: auto;
-    }
   }
 
   .card-heading {
@@ -39,5 +40,12 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
     text-align: left;
+  }
+}
+
+.small-img {
+  img {
+    max-width: 90%;
+    max-height: 90%;
   }
 }

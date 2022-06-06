@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import "./App.scss";
 import GetStarted from "./pages/get-started/GetStarted";
+import Homepage from "./pages/homepage/Homepage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<GetStarted />} />
+          <Route path="/homepage" element={<Homepage />} />
         </Routes>
       </div>
     </Router>

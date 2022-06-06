@@ -1,8 +1,10 @@
 import "./Card.scss";
 
-function Card({ image, alt, title, price, description }) {
+function Card({ image, alt, title, price, description, className }) {
+  const classes = "card " + className;
+
   return (
-    <div className="card">
+    <div className={classes}>
       <div className="image-container">
         <img src={image} alt={alt} />
       </div>
